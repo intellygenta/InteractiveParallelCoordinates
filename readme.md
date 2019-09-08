@@ -1,6 +1,8 @@
-# iparacoord (**i**nteractive **para**llel **coord**inates)
+# Interactive parallel coordinates
 
-Python code for interactive visualization of decision trees.
+Python code for interactive parallel coordinates visualization on jupyter notebook.
+
+<img src="screenshots/wine_mouseover.gif" width="480px">
 
 ## Requirement
 
@@ -29,14 +31,14 @@ estimator = tree.DecisionTreeClassifier(max_depth=3).fit(X, y)
 pct = iparacoord.ParallelCoordinatesTree(estimator)
 pct.visualize(X, y, feature_names=wine.feature_names, target_names=wine.target_names)
 ```
-![](screenshots/wine_mouseover.gif)
-![](screenshots/wine_scroll.gif)
+<img src="screenshots/wine_mouseover.gif" width="480px">
+<img src="screenshots/wine_scroll.gif" width="480px">
 
 Visualize a local explanation:
 ```python
 pct.predict(X[0])
 ```
-![](screenshots/wine_predict.png)
+<img src="screenshots/wine_predict.gif" width="480px">
 
 Visualize a decision tree regressor:
 ```python
@@ -47,7 +49,7 @@ estimator = tree.DecisionTreeRegressor(max_depth=2).fit(X, y)
 pct = iparacoord.ParallelCoordinatesTree(estimator)
 pct.visualize(X, y, feature_names=boston.feature_names, target_names=['MEDV'])
 ```
-![](screenshots/boston.png)
+<img src="screenshots/boston.gif" width="480px">
 
 ## Author
 
