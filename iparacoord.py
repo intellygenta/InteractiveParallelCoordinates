@@ -1,5 +1,3 @@
-# Copyright 2019 Genta Yoshimura
-
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt

@@ -1,4 +1,4 @@
-# Interactive parallel coordinates
+# Interactive Parallel Coordinates (iparacoord)
 
 Python code for interactive parallel coordinates visualization on jupyter notebook.
 
